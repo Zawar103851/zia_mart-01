@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+enum Operation {
+  UNKNOWN=0;
+  PUT=1;
+  DELETE=2;
+  CREATE=3;
+}
+
+message product {
+  int32 id = 1;
+  string name = 2;
+  float price = 3;
+  int32 quantity = 4;
+  Operation type=5;
+}

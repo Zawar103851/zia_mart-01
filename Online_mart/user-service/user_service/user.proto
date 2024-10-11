@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+enum Operation {
+  UNKNOWN=0;
+  PUT=1;
+  DELETE=2;
+  CREATE=3;
+}
+
+message user {
+  int32 id = 1;
+  string username = 2;
+  string email = 3;
+  string password = 4;
+  Operation type = 5;
+}
